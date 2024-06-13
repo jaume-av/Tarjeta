@@ -1,0 +1,56 @@
+/* Navbar */
+.navbar-custom {
+    background-color: #247bc7;
+}
+
+.navbar-brand-custom img {
+    height: 40px; /* Ajusta la altura según sea necesario */
+    margin-right: 10px; /* Añade un margen entre la imagen y el texto */
+}
+
+.navbar-brand-custom .navbar-text {
+    color: white; /* Color del texto en blanco */
+    font-weight: bold; /* Texto en negrita */
+}
+
+body {
+    background-image: url('logo.png'), linear-gradient(to bottom, rgba(61, 96, 131, 0.29), rgba(61, 96, 131, 0.79));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo del Carousel */
+.carousel {
+    height: 30vh; /* Altura del carousel: 30% de la altura visible del dispositivo */
+    width: 100%; /* Ancho completo del carousel */
+    overflow: hidden; /* Evitar que las imágenes se desborden del carousel */
+}
+
+.carousel-item img {
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+    width: 100%; /* Ancho del 100% para cubrir completamente el contenedor del carousel item */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor sin distorsionar */
+}
+
+
+/* Footer */
+.footer-custom {
+    background-color: #247bc7;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-custom .nav-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-custom .nav-link:hover {
+    color: #d3d3d3;
+}
