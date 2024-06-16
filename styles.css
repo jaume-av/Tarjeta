@@ -19,15 +19,23 @@
     margin: 0 10px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif; /* Font principal */
-    background-image: url('logo.png'), linear-gradient(to bottom, rgba(61, 96, 131, 0.29), rgba(61, 96, 131, 0.79));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* Fondo responsivo */
+.bg-cover {
+    background-image: url('logo.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; /* La imagen está centrada */
+    background-repeat: no-repeat; /* La imagen no se repite */
+    background-attachment: fixed; /* La imagen está fija en su posición */
+    min-height: 100vh; /* Mínimo alto de la pantalla completa */
+
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+    .bg-cover {
+        background-size: auto 100%; /* Ajusta la altura de la imagen al 100% */
+        background-attachment: scroll; /* Permite que la imagen se desplace con el contenido */
+    }
 }
 
 /* Estilo del Carousel */
