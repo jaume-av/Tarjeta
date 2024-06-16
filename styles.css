@@ -31,9 +31,11 @@
     display: block; /* Asegura que el h2 sea visible */
 }
 
+/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .principal {
-        background-image: none; /* Remover imagen de fondo en dispositivos móviles si es necesario */
+        background-size: contain; /* Hace que la imagen se ajuste dentro del contenedor */
+        background-position: top; /* Ajusta la posición de la imagen */
     }
 }
 
