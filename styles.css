@@ -13,9 +13,19 @@
     font-weight: bold; /* Texto en negrita */
 }
 
+/*alineacion nombres imagen*/
+.navbar-brand-custom img {
+    height: 40px;
+    margin: 0 10px;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Font principal */
     background-image: url('logo.png'), linear-gradient(to bottom, rgba(61, 96, 131, 0.29), rgba(61, 96, 131, 0.79));
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -54,3 +64,15 @@ body {
 .footer-custom .nav-link:hover {
     color: #d3d3d3;
 }
+
+
+/* Fonts */
+.allura-font { font-family: 'Allura', cursive; }
+.cinzel-font { font-family: 'Cinzel', serif; }
+.cormorant-garamond-font { font-family: 'Cormorant Garamond', serif; }
+.dancing-script-font { font-family: 'Dancing Script', cursive; }
+.great-vibes-font { font-family: 'Great Vibes', cursive; }
+.montserrat-font { font-family: 'Montserrat', sans-serif; }
+.playfair-display-font { font-family: 'Playfair Display', serif; }
+.roboto-font { font-family: 'Roboto', sans-serif; }
+.sacramento-font { font-family: 'Sacramento', cursive; }
