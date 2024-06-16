@@ -13,29 +13,21 @@
     font-weight: bold; /* Texto en negrita */
 }
 
-/*alineacion nombres imagen*/
-.navbar-brand-custom img {
-    height: 40px;
-    margin: 0 10px;
+/* Estilos para la sección con imagen de fondo después del carrusel */
+.bg-cover-after-carousel {
+    background-image: url('logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ajusta la altura según sea necesario */
+    padding: 80px 0; /* Ajusta el relleno superior e inferior */
+    color: white; /* Color del texto en blanco */
+    text-align: center; /* Alineación del texto centrada */
 }
 
-/* Fondo responsivo */
-.bg-cover {
-    background-image: url('logo.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-position: center; /* La imagen está centrada */
-    background-repeat: no-repeat; /* La imagen no se repite */
-    background-attachment: fixed; /* La imagen está fija en su posición */
-    min-height: 100vh; /* Mínimo alto de la pantalla completa */
-
-}
-
-/* Ajustes específicos para móviles */
-@media (max-width: 768px) {
-    .bg-cover {
-        background-size: auto 100%; /* Ajusta la altura de la imagen al 100% */
-        background-attachment: scroll; /* Permite que la imagen se desplace con el contenido */
-    }
+.bg-cover-after-carousel h2 {
+    font-size: 3rem; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio inferior del título */
 }
 
 /* Estilo del Carousel */
@@ -50,7 +42,6 @@
     width: 100%; /* Ancho del 100% para cubrir completamente el contenedor del carousel item */
     object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor sin distorsionar */
 }
-
 
 /* Footer */
 .footer-custom {
@@ -72,7 +63,6 @@
 .footer-custom .nav-link:hover {
     color: #d3d3d3;
 }
-
 
 /* Fonts */
 .allura-font { font-family: 'Allura', cursive; }
