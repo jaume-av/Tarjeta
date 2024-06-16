@@ -34,8 +34,7 @@
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .principal {
-        background-size: cover;
-        /*background-size: contain; !* Hace que la imagen se ajuste dentro del contenedor *!*/
+        background-size: contain; /* Hace que la imagen se ajuste dentro del contenedor */
         background-position: top; /* Ajusta la posición de la imagen */
     }
 }
