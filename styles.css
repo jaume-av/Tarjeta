@@ -25,11 +25,11 @@
     text-align: center; /* Alineación del texto centrada */
 }
 
-.principal h2 {
-    font-size: 3rem; /* Tamaño de fuente grande */
-    margin-bottom: 20px; /* Espacio inferior del título */
-    display: block; /* Asegura que el h2 sea visible */
-}
+/*.principal h2 {*/
+/*    font-size: 3rem; !* Tamaño de fuente grande *!*/
+/*    margin-bottom: 20px; !* Espacio inferior del título *!*/
+/*    display: block; !* Asegura que el h2 sea visible *!*/
+/*}*/
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -54,7 +54,7 @@
 
 /* Footer */
 .footer-custom {
-    background-color: #247bc7;
+    background-color: #208d68;
     color: white;
     position: fixed;
     bottom: 0;
