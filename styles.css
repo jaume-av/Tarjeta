@@ -84,3 +84,42 @@
 .playfair-display-font { font-family: 'Playfair Display', serif; }
 .roboto-font { font-family: 'Roboto', sans-serif; }
 .sacramento-font { font-family: 'Sacramento', cursive; }
+
+/* Estilos para las cards */
+.custom-card {
+    border: 2px solid #208d68; /* Borde verde */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px; /* Espacio inferior entre las cards */
+}
+
+.custom-card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.2); /* Aumento de la sombra en hover */
+}
+
+.custom-card .card-title {
+    color: #208d68; /* Color verde para el título */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 1rem; /* Espacio inferior entre el título y el contenido */
+}
+
+.custom-card .card-text {
+    color: #6c757d; /* Color de texto gris */
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.custom-card .custom-btn {
+    background-color: #208d68; /* Fondo verde para el botón */
+    border-color: #208d68; /* Borde verde para el botón */
+    color: white; /* Texto blanco */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transición suave */
+}
+
+.custom-card .custom-btn:hover {
+    background-color: #186c4a; /* Fondo más oscuro en hover */
+    border-color: #186c4a; /* Borde más oscuro en hover */
+}
