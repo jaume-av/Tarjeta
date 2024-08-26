@@ -1,59 +1,82 @@
-/* Navbar */
+/* Navbar personalitzada */
 .navbar-custom {
-    background-color: #208d68;
+    background-color: #338b85;
 }
 
 .navbar-brand-custom img {
-    height: 40px; /* Ajusta la altura según sea necesario */
-    margin-right: 10px; /* Añade un margen entre la imagen y el texto */
+    height: 40px; /* Alçada de la barra */
+    margin-right: 10px; /* Afegeix un marge entre la imatge i el text */
 }
 
 .navbar-brand-custom .navbar-text {
-    color: white; /* Color del texto en blanco */
-    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del text en blanc */
+    font-weight: bold; /* Text en negreta */
 }
 
-/* Estilos para la sección con imagen de fondo después del carrusel */
+/* Estils per a la secció amb imatge de fons després del carrusel */
 .principal {
-    background-image: url('fondos/fondo3.jpg'); /* Ruta a tu imagen de fondo */
+    /*background-image: url('imatges/detalls/fonsCard.png'); !* Ruta a la teua imatge de fons *!*/
+    background-color: ghostwhite;
     background-size: cover;
     background-position: center;
-    /*background-repeat: no-repeat;*/
-    min-height: 100vh; /* Altura mínima de pantalla completa */
-    padding: 80px 0; /* Relleno superior e inferior */
-    color: black; /* Color del texto */
-    text-align: center; /* Alineación del texto centrada */
+    min-height: 100vh; /* Alçada mínima de pantalla completa */
+    padding: 80px 0; /* Farciment superior i inferior */
+    color: black; /* Color del text */
+    text-align: center; /* Alineació del text centrada */
 }
 
-/*.principal h2 {*/
-/*    font-size: 3rem; !* Tamaño de fuente grande *!*/
-/*    margin-bottom: 20px; !* Espacio inferior del título *!*/
-/*    display: block; !* Asegura que el h2 sea visible *!*/
-/*}*/
-
-/* Media query para dispositivos móviles */
+/* Media query per a mòbils */
 @media (max-width: 768px) {
     .principal {
-        background-size: cover; /* Mantiene el tamaño de la imagen para cubrir */
-        background-repeat: no-repeat; /* Evita la repetición de la imagen */
-        background-position: center; /* Ajusta la posición de la imagen */
+        background-size: cover; /* Manté la mida de la imatge per cobrir */
+        background-repeat: no-repeat; /* Evita la repetició de la imatge */
+        background-position: center; /* Ajusta la posició de la imatge */
     }
 }
 
-/* Estilo del Carousel */
+/* Estils per a les seccions */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(32, 141, 104, 0.4);
+}
+
+/* Estil del Carrusel */
 .carousel {
-    height: 30vh; /* Altura del carousel: 30% de la altura visible del dispositivo */
-    width: 100%; /* Ancho completo del carousel */
-    overflow: hidden; /* Evitar que las imágenes se desborden del carousel */
+    height: 30vh; /* Alçada del carrusel: 30% de l'alçada visible del dispositiu */
+    width: 100%; /* Amplària completa del carrusel */
+    overflow: hidden; /* Evitar que les imatges es desborden del carrusel */
 }
 
 .carousel-item img {
-    height: auto; /* Altura automática para mantener la proporción de la imagen */
-    width: 100%; /* Ancho del 100% para cubrir completamente el contenedor del carousel item */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor sin distorsionar */
+    height: auto; /* Alçada automàtica per mantenir la proporció de la imatge */
+    width: 100%; /* Amplària del 100% per cobrir completament el contenidor del carrusel item */
+    object-fit: cover; /* Ajusta la imatge per cobrir completament el contenidor sense distorsionar */
 }
 
-/* Footer */
+/* Estil per a la línia de separació amb imatge ornamental */
+.separator-section {
+    position: relative;
+    margin: 40px 0; /* Separació superior i inferior */
+}
+
+.separator-section .ornamental {
+    border: 0;
+    height: 50px; /* Ajusta l'alçada segons la imatge */
+    background: url('imatges/detalls/lineaornament.png') no-repeat center center;
+    background-size: auto; /* Ajusta la mida perquè la imatge s'ajuste al contenidor */
+}
+
+/* Estil per a la data */
+.date {
+    font-size: 2rem; /* Mida de font per a la data */
+    color: #338b85; /* Color verd fosc */
+    font-family: 'Allura', cursive; /* Font Allura */
+}
+
+/* Peu de pàgina personalitzat */
 .footer-custom {
     background-color: #208d68;
     color: white;
@@ -85,41 +108,53 @@
 .roboto-font { font-family: 'Roboto', sans-serif; }
 .sacramento-font { font-family: 'Sacramento', cursive; }
 
-/* Estilos para las cards */
+/* Estils de les cards */
 .custom-card {
-    border: 2px solid #208d68; /* Borde verde */
+    border: 2px solid #208d68; /* Vora Verda */
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Ombra */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px; /* Espacio inferior entre las cards */
+    margin-bottom: 20px; /* Separació entre les cards */
+}
+
+.custom-card .card-body {
+    border-radius: 20px; /* Vora Redondejada */
+    padding: 20px;
 }
 
 .custom-card:hover {
-    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
-    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.2); /* Aumento de la sombra en hover */
+    transform: translateY(-5px); /* Efecte del hover */
+    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4); /* Més ombra en hover */
+}
+
+.custom-card .card-img-top {
+    width: 100%;
+    height: auto; /* Proporció original de la imatge */
+    margin-bottom: 15px; /* Espai entre imatge i títol */
+    border-radius: 10px;
 }
 
 .custom-card .card-title {
-    color: #208d68; /* Color verde para el título */
-    font-weight: bold; /* Texto en negrita */
-    margin-bottom: 1rem; /* Espacio inferior entre el título y el contenido */
+    color: #338b85; /* Color verd per al títol */
+    font-weight: bold; /* Text en negreta */
+    margin-bottom: 1rem; /* Espai inferior entre el títol i el contingut */
 }
 
 .custom-card .card-text {
-    color: #6c757d; /* Color de texto gris */
-    font-size: 0.9rem; /* Tamaño de fuente reducido */
-    line-height: 1.6; /* Espaciado entre líneas */
+    color: #6c757d; /* Color de text gris */
+    font-size: 0.9rem; /* Mida de font reduïda */
+    line-height: 1.6; /* Espaiat entre línies */
 }
 
 .custom-card .custom-btn {
-    background-color: #208d68; /* Fondo verde para el botón */
-    border-color: #208d68; /* Borde verde para el botón */
-    color: white; /* Texto blanco */
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transición suave */
+    background-color: #338b85; /* Fons verd per al botó */
+    border-color: #338b85; /* Vora verd per al botó */
+    color: white; /* Text blanc */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transició suau */
 }
 
 .custom-card .custom-btn:hover {
-    background-color: #186c4a; /* Fondo más oscuro en hover */
-    border-color: #186c4a; /* Borde más oscuro en hover */
+    background-color: #1c534f; /* Fons més fosc en hover */
+    /*border-color: #64186c; !* Vora més fosca en hover *!*/
 }
