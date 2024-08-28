@@ -65,7 +65,7 @@ section {
 .separator-section .ornamental {
     border: 0;
     height: 50px; /* Ajusta l'alçada segons la imatge */
-    background: url('imatges/detalls/lineaornament3.png') no-repeat center center;
+    background: url('imatges/detalls/lineaornament.png') no-repeat center center;
     background-size: auto; /* Ajusta la mida perquè la imatge s'ajuste al contenidor */
 }
 
