@@ -1,12 +1,11 @@
-/* Estil personalitzat de la barra de navegació */
+/* Navbar personalitzada */
 .navbar-custom {
     background-color: #338b85;
 }
 
-/* Estil de la marca de la barra de navegació */
 .navbar-brand-custom img {
-    height: 40px; /* Alçada de la imatge del logo */
-    margin-right: 10px; /* Espai entre la imatge i el text */
+    height: 40px; /* Alçada de la barra */
+    margin-right: 10px; /* Afegeix un marge entre la imatge i el text */
 }
 
 .navbar-brand-custom .navbar-text {
@@ -14,9 +13,10 @@
     font-weight: bold; /* Text en negreta */
 }
 
-/* Estils per a la secció principal amb imatge de fons */
+/* Estils per a la secció amb imatge de fons després del carrusel */
 .principal {
-    background-image: url('fondos/fondo3.jpg'); /* Ruta a la imatge de fons */
+    /*background-image: url('imatges/detalls/fonsCard.png'); !* Ruta a la teua imatge de fons *!*/
+    background-color: ghostwhite;
     background-size: cover;
     background-position: center;
     min-height: 100vh; /* Alçada mínima de pantalla completa */
@@ -32,27 +32,6 @@
         background-repeat: no-repeat; /* Evita la repetició de la imatge */
         background-position: center; /* Ajusta la posició de la imatge */
     }
-
-    /* Ajustament de padding per a les seccions */
-    section {
-        padding: 15px 0; /* Reduir el padding superior i inferior */
-    }
-
-    /* Ajustament del espai inferior entre les cards */
-    .card {
-        margin-bottom: 20px; /* Ajustar el espai inferior entre les cards */
-    }
-
-    /* Ajustament del separador */
-    .separator-section {
-        margin: 20px 0; /* Reduir el marge superior i inferior */
-    }
-
-    /* Ajustament en el contenidor per a més flexibilitat */
-    .container {
-        padding-left: 15px; /* Reduir el padding lateral */
-        padding-right: 15px;
-    }
 }
 
 /* Estils per a les seccions */
@@ -64,7 +43,7 @@ section {
     box-shadow: 0 2px 4px rgba(32, 141, 104, 0.4);
 }
 
-/* Estils per al carrusel */
+/* Estil del Carrusel */
 .carousel {
     height: 30vh; /* Alçada del carrusel: 30% de l'alçada visible del dispositiu */
     width: 100%; /* Amplària completa del carrusel */
@@ -86,7 +65,7 @@ section {
 .separator-section .ornamental {
     border: 0;
     height: 50px; /* Ajusta l'alçada segons la imatge */
-    background: url('imatges/detalls/lineaornament.png') no-repeat center center;
+    background: url('imatges/detalls/lineaornament3.png') no-repeat center center;
     background-size: auto; /* Ajusta la mida perquè la imatge s'ajuste al contenidor */
 }
 
@@ -118,7 +97,7 @@ section {
     color: #d3d3d3;
 }
 
-/* Fonts personalitzades */
+/* Fonts */
 .allura-font { font-family: 'Allura', cursive; }
 .cinzel-font { font-family: 'Cinzel', serif; }
 .cormorant-garamond-font { font-family: 'Cormorant Garamond', serif; }
@@ -140,7 +119,7 @@ section {
 }
 
 .custom-card .card-body {
-    border-radius: 20px; /* Vora redondejada */
+    border-radius: 20px; /* Vora Redondejada */
     padding: 20px;
 }
 
@@ -169,13 +148,13 @@ section {
 }
 
 .custom-card .custom-btn {
-    background-color: #208d68; /* Fons verd per al botó */
-    border-color: #208d68; /* Vora verd per al botó */
+    background-color: #338b85; /* Fons verd per al botó */
+    border-color: #338b85; /* Vora verd per al botó */
     color: white; /* Text blanc */
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transició suau */
 }
 
 .custom-card .custom-btn:hover {
-    background-color: #0b402d; /* Fons més fosc en hover */
-    border-color: #64186c; /* Vora més fosca en hover */
+    background-color: #1c534f; /* Fons més fosc en hover */
+    /*border-color: #64186c; !* Vora més fosca en hover *!*/
 }
