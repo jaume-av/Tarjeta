@@ -134,6 +134,14 @@
     padding: 0;
     background-color: ghostwhite;
     border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transició suau */
+
+}
+
+/* Efecte hover - mou lleugerament el carousel cap amunt i afegeix més ombra */
+.carousel-definitiu:hover {
+    transform: translateY(-5px); /* Mou cap amunt */
+    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4); /* Afegir ombra més pronunciada */
 }
 
 /* Afegeix separació superior i inferior a les imatges del carousel */
