@@ -13,70 +13,47 @@
     font-weight: bold; /* Text en negreta */
 }
 
-/* Estils per a la secció amb imatge de fons després del carrusel */
+/* Secció amb fons */
 .principal {
-    /*background-image: url('imatges/detalls/fonsCard.png'); !* Ruta a la teua imatge de fons *!*/
     background-color: ghostwhite;
     background-size: cover;
     background-position: center;
     min-height: 100vh; /* Alçada mínima de pantalla completa */
-    padding: 80px 0; /* Farciment superior i inferior */
-    color: black; /* Color del text */
+    padding: 80px 0;
+    color: black;
     text-align: center; /* Alineació del text centrada */
 }
 
 /* Media query per a mòbils */
 @media (max-width: 768px) {
     .principal {
-        background-size: cover; /* Manté la mida de la imatge per cobrir */
-        background-repeat: no-repeat; /* Evita la repetició de la imatge */
-        background-position: center; /* Ajusta la posició de la imatge */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-}
-
-/* Estils per a les seccions */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(32, 141, 104, 0.4);
-}
-
-/* Estil del Carrusel */
-.carousel {
-    height: 30vh; /* Alçada del carrusel: 30% de l'alçada visible del dispositiu */
-    width: 100%; /* Amplària completa del carrusel */
-    overflow: hidden; /* Evitar que les imatges es desborden del carrusel */
-}
-
-.carousel-item img {
-    height: auto; /* Alçada automàtica per mantenir la proporció de la imatge */
-    width: 100%; /* Amplària del 100% per cobrir completament el contenidor del carrusel item */
-    object-fit: cover; /* Ajusta la imatge per cobrir completament el contenidor sense distorsionar */
 }
 
 /* Estil per a la línia de separació amb imatge ornamental */
 .separator-section {
     position: relative;
-    margin: 40px 0; /* Separació superior i inferior */
+    margin: 40px 0;
 }
 
 .separator-section .ornamental {
     border: 0;
-    height: 50px; /* Ajusta l'alçada segons la imatge */
+    height: 50px;
     background: url('imatges/detalls/lineaornament.png') no-repeat center center;
-    background-size: auto; /* Ajusta la mida perquè la imatge s'ajuste al contenidor */
+    background-size: auto;
 }
 
 /* Estil per a la data */
 .date {
-    font-size: 2rem; /* Mida de font per a la data */
-    color: #338b85; /* Color verd fosc */
-    font-family: 'Allura', cursive; /* Font Allura */
+    font-size: 2rem;
+    color: #338b85;
+    font-family: 'Allura', cursive;
 }
 
-/* Peu de pàgina personalitzat */
+/* Peu de pàgina */
 .footer-custom {
     background-color: #208d68;
     color: white;
@@ -99,62 +76,128 @@ section {
 
 /* Fonts */
 .allura-font { font-family: 'Allura', cursive; }
-.cinzel-font { font-family: 'Cinzel', serif; }
-.cormorant-garamond-font { font-family: 'Cormorant Garamond', serif; }
-.dancing-script-font { font-family: 'Dancing Script', cursive; }
-.great-vibes-font { font-family: 'Great Vibes', cursive; }
 .montserrat-font { font-family: 'Montserrat', sans-serif; }
-.playfair-display-font { font-family: 'Playfair Display', serif; }
-.roboto-font { font-family: 'Roboto', sans-serif; }
-.sacramento-font { font-family: 'Sacramento', cursive; }
 
 /* Estils de les cards */
 .custom-card {
-    border: 2px solid #208d68; /* Vora Verda */
+    border: 2px solid #208d68;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Ombra */
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px; /* Separació entre les cards */
+    margin-bottom: 20px;
 }
 
 .custom-card .card-body {
-    border-radius: 20px; /* Vora Redondejada */
+    border-radius: 20px;
     padding: 20px;
 }
 
 .custom-card:hover {
-    transform: translateY(-5px); /* Efecte del hover */
-    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4); /* Més ombra en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4);
 }
 
 .custom-card .card-img-top {
     width: 100%;
-    height: auto; /* Proporció original de la imatge */
-    margin-bottom: 15px; /* Espai entre imatge i títol */
+    height: auto;
+    margin-bottom: 15px;
     border-radius: 10px;
 }
 
 .custom-card .card-title {
-    color: #338b85; /* Color verd per al títol */
-    font-weight: bold; /* Text en negreta */
-    margin-bottom: 1rem; /* Espai inferior entre el títol i el contingut */
+    color: #338b85;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .custom-card .card-text {
-    color: #6c757d; /* Color de text gris */
-    font-size: 0.9rem; /* Mida de font reduïda */
-    line-height: 1.6; /* Espaiat entre línies */
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .custom-card .custom-btn {
-    background-color: #338b85; /* Fons verd per al botó */
-    border-color: #338b85; /* Vora verd per al botó */
-    color: white; /* Text blanc */
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transició suau */
+    background-color: #338b85;
+    border-color: #338b85;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .custom-card .custom-btn:hover {
-    background-color: #1c534f; /* Fons més fosc en hover */
-    /*border-color: #64186c; !* Vora més fosca en hover *!*/
+    background-color: #1c534f;
+}
+
+/* Carousel Definitivo */
+.carousel-container {
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra suave */
+    padding: 0; /* Elimina el padding */
+    background-color: ghostwhite; /* Fondo ghostwhite */
+    border: none; /* Elimina el borde */
+}
+
+/* Asegurar que las imágenes se ajusten al contenedor */
+.carousel-item img {
+    object-fit: contain;
+    height: 400px; /* Fija la altura de las imágenes */
+    width: 100%;
+}
+
+/* Fondo claro para el contenedor que se muestra si la imagen no lo rellena */
+.carousel-item {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+}
+
+/* Estilo para el texto de las citas con tipografía Allura, color verde oscuro y en negrita */
+.carousel-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px; /* Mover hacia abajo cerca del borde inferior */
+    color: #1c534f; /* Texto verde oscuro */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco semitransparente */
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%; /* Ajuste para que las citas sean más responsivas */
+    text-align: center; /* Centra el texto */
+    font-size: 1.5vw; /* Escala el tamaño de la fuente según el ancho de la ventana */
+    font-family: 'Allura', cursive; /* Usa la fuente Allura */
+    font-weight: bold; /* Letra en negrita */
+}
+
+/* Ajustes específicos para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 300px; /* Reducir altura de las imágenes en móviles */
+    }
+
+    .carousel-caption {
+        font-size: 3.5vw; /* Aumenta el tamaño relativo de la fuente en pantallas pequeñas */
+        padding: 5px; /* Reducir el padding en pantallas pequeñas */
+        width: 90%; /* Hacer que la cita ocupe más espacio en pantallas pequeñas */
+    }
+}
+
+/* Estilos para los botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Estilos para los puntos indicadores */
+.carousel-indicators [data-bs-target] {
+    background-color: #338b85;
+}
+
+/* Estilo personalizado para los botones */
+.custom-btn {
+    background-color: #338b85;
+    border-color: #338b85;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #1c534f;
 }
