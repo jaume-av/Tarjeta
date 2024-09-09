@@ -27,9 +27,18 @@
 /* Media query per a mòbils */
 @media (max-width: 768px) {
     .principal {
+        padding: 50px 0; /* Reduir el padding en dispositius més xicotets */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .navbar-brand-custom .navbar-text {
+        font-size: 1.2rem; /* Ajustar la mida de la font per a pantalles petites */
+    }
+
+    .navbar-brand-custom img {
+        height: 30px; /* Ajustar la mida del logo en dispositius mòbils */
     }
 }
 
@@ -51,6 +60,21 @@
     font-size: 2rem;
     color: #338b85;
     font-family: 'Allura', cursive;
+}
+
+/* Ajustos per a pantalles més petites */
+@media (max-width: 576px) {
+    .date {
+        font-size: 1.5rem; /* Reduir la mida de la data per a pantalles petites */
+    }
+
+    .separator-section {
+        margin: 20px 0;
+    }
+
+    .separator-section .ornamental {
+        height: 30px; /* Ajustar la mida de la línia ornamental */
+    }
 }
 
 /* Peu de pàgina */
@@ -126,6 +150,21 @@
 
 .custom-card .custom-btn:hover {
     background-color: #1c534f;
+}
+
+/* Ajustos de les cards per a dispositius mòbils */
+@media (max-width: 768px) {
+    .custom-card {
+        margin-bottom: 15px;
+    }
+
+    .custom-card .card-title {
+        font-size: 1.3rem;
+    }
+
+    .custom-card .custom-btn {
+        font-size: 0.9rem; /* Reduir la mida del botó */
+    }
 }
 
 /* Carousel Definitiu */
