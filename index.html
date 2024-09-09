@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaume & Isabel</title>
 
+    <!-- Estils CSS del projecte -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
+    <!-- Fonts de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
@@ -30,52 +32,52 @@
 <!-- Secció Principal -->
 <main class="principal bg-image">
 
-
-    <!-- Carousel Definitivo añadido después de las cards -->
+    <!-- Carousel Definitiu -->
     <section class="container-fluid mt-4">
-        <div class="container carousel-container">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <!-- Puntos indicadores -->
+        <div class="container carousel-definitiu">
+            <div id="carouselDefinitiu" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <!-- Punts indicadors -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselDefinitiu" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDefinitiu" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDefinitiu" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselDefinitiu" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
 
+                <!-- Imatges del carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="imatges/fotos/foto1.jpg" class="d-block w-100" alt="Cita 1">
-                        <div class="carousel-caption allura-font">
+                        <div class="carousel-definitiu-caption allura-font">
                             <h5>"El éxito es ir de fracaso en fracaso sin perder el entusiasmo." – Winston Churchill</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="imatges/fotos/foto2.jpg" class="d-block w-100" alt="Cita 2">
-                        <div class="carousel-caption allura-font">
+                        <div class="carousel-definitiu-caption allura-font">
                             <h5>"La vida es lo que pasa mientras estás ocupado haciendo otros planes." – John Lennon</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="imatges/fotos/foto3.jpg" class="d-block w-100" alt="Cita 3">
-                        <div class="carousel-caption allura-font">
+                        <div class="carousel-definitiu-caption allura-font">
                             <h5>"No cuentes los días, haz que los días cuenten." – Muhammad Ali</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="imatges/fotos/foto4.jpg" class="d-block w-100" alt="Cita 4">
-                        <div class="carousel-caption allura-font">
+                        <div class="carousel-definitiu-caption allura-font">
                             <h5>"El único modo de hacer un gran trabajo es amar lo que haces." – Steve Jobs</h5>
                         </div>
                     </div>
                 </div>
 
-                <!-- Controles de navegación -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <!-- Controls de navegació -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDefinitiu" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDefinitiu" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
@@ -83,10 +85,12 @@
         </div>
     </section>
 
+    <!-- Secció de Cards -->
     <section>
         <!-- Cards amb disposició responsiva -->
         <div class="container mt-4">
             <div class="row justify-content-center">
+                <!-- Primera card -->
                 <div class="col-md-6 mb-3">
                     <div class="card custom-card">
                         <div class="card-body">
@@ -105,13 +109,13 @@
                                     <p>
                                         <a href="https://www.google.com/maps/place/Los+Olivos+-+Villareal" target="_blank" class="btn btn-secondary">Abrir en Google Maps</a>
                                     </p>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Segona card -->
                 <div class="col-md-6 mb-3">
                     <div class="card custom-card">
                         <div class="card-body">
@@ -129,6 +133,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Tercera card -->
                 <div class="col-md-6 mb-3">
                     <div class="card custom-card">
                         <div class="card-body">
@@ -147,6 +153,7 @@
                     </div>
                 </div>
 
+                <!-- Quarta card -->
                 <div class="col-md-6 mb-3">
                     <div class="card custom-card">
                         <div class="card-body">
@@ -164,10 +171,10 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
 
 </main>
 

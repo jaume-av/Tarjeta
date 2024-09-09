@@ -128,76 +128,66 @@
     background-color: #1c534f;
 }
 
-/* Carousel Definitivo */
-.carousel-container {
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra suave */
-    padding: 0; /* Elimina el padding */
-    background-color: ghostwhite; /* Fondo ghostwhite */
-    border: none; /* Elimina el borde */
+/* Carousel Definitiu */
+.carousel-definitiu {
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
+    padding: 0;
+    background-color: ghostwhite;
+    border: none;
 }
 
-/* Asegurar que las imágenes se ajusten al contenedor */
-.carousel-item img {
+/* Afegeix separació superior i inferior a les imatges del carousel */
+.carousel-definitiu .carousel-item {
+    padding-top: 20px; /* Separació superior */
+    padding-bottom: 20px; /* Separació inferior */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ajustar que les imatges ocupen l'espai correctament */
+.carousel-definitiu .carousel-item img {
     object-fit: contain;
-    height: 400px; /* Fija la altura de las imágenes */
+    height: 400px;
     width: 100%;
 }
 
-/* Fondo claro para el contenedor que se muestra si la imagen no lo rellena */
-.carousel-item {
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-}
-
-/* Estilo para el texto de las citas con tipografía Allura, color verde oscuro y en negrita */
-.carousel-caption {
+/* Estils de les cites */
+.carousel-definitiu-caption {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px; /* Mover hacia abajo cerca del borde inferior */
-    color: #1c534f; /* Texto verde oscuro */
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco semitransparente */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #1c534f;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 8px;
-    width: 80%; /* Ajuste para que las citas sean más responsivas */
-    text-align: center; /* Centra el texto */
-    font-size: 1.5vw; /* Escala el tamaño de la fuente según el ancho de la ventana */
-    font-family: 'Allura', cursive; /* Usa la fuente Allura */
-    font-weight: bold; /* Letra en negrita */
+    width: 80%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Allura', cursive;
+    font-weight: bold;
 }
 
-/* Ajustes específicos para pantallas muy pequeñas */
+/* Ajustos per a pantalles petites */
 @media (max-width: 576px) {
-    .carousel-item img {
-        height: 300px; /* Reducir altura de las imágenes en móviles */
+    .carousel-definitiu .carousel-item img {
+        height: 300px;
     }
 
-    .carousel-caption {
-        font-size: 3.5vw; /* Aumenta el tamaño relativo de la fuente en pantallas pequeñas */
-        padding: 5px; /* Reducir el padding en pantallas pequeñas */
-        width: 90%; /* Hacer que la cita ocupe más espacio en pantallas pequeñas */
+    .carousel-definitiu-caption {
+        font-size: 3.5vw;
+        padding: 5px;
+        width: 90%;
     }
 }
 
-/* Estilos para los botones del carrusel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+/* Botons del carousel */
+.carousel-definitiu .carousel-control-prev-icon,
+.carousel-definitiu .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
 
-/* Estilos para los puntos indicadores */
-.carousel-indicators [data-bs-target] {
+/* Punts indicadors */
+.carousel-definitiu .carousel-indicators [data-bs-target] {
     background-color: #338b85;
-}
-
-/* Estilo personalizado para los botones */
-.custom-btn {
-    background-color: #338b85;
-    border-color: #338b85;
-    color: white;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-    background-color: #1c534f;
 }
