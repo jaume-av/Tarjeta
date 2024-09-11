@@ -4,13 +4,13 @@
 }
 
 .navbar-brand-custom img {
-    height: 40px; /* Alçada de la barra */
-    margin-right: 10px; /* Afegeix un marge entre la imatge i el text */
+    height: 40px;
+    margin-right: 10px;
 }
 
 .navbar-brand-custom .navbar-text {
-    color: white; /* Color del text en blanc */
-    font-weight: bold; /* Text en negreta */
+    color: white;
+    font-weight: bold;
 }
 
 /* Secció amb fons */
@@ -18,27 +18,18 @@
     background-color: ghostwhite;
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Alçada mínima de pantalla completa */
+    min-height: 100vh;
     padding: 80px 0;
     color: black;
-    text-align: center; /* Alineació del text centrada */
+    text-align: center;
 }
 
 /* Media query per a mòbils */
 @media (max-width: 768px) {
     .principal {
-        padding: 50px 0; /* Reduir el padding en dispositius més xicotets */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
-
-    .navbar-brand-custom .navbar-text {
-        font-size: 1.2rem; /* Ajustar la mida de la font per a pantalles petites */
-    }
-
-    .navbar-brand-custom img {
-        height: 30px; /* Ajustar la mida del logo en dispositius mòbils */
     }
 }
 
@@ -46,6 +37,15 @@
 .separator-section {
     position: relative;
     margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #1a6e63; /* Borde más oscuro */
+}
+
+.separator-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4);
 }
 
 .separator-section .ornamental {
@@ -53,28 +53,13 @@
     height: 50px;
     background: url('imatges/detalls/lineaornament.png') no-repeat center center;
     background-size: auto;
+    border-radius: 10px;
 }
 
-/* Estil per a la data */
 .date {
     font-size: 2rem;
     color: #338b85;
     font-family: 'Allura', cursive;
-}
-
-/* Ajustos per a pantalles més petites */
-@media (max-width: 576px) {
-    .date {
-        font-size: 1.5rem; /* Reduir la mida de la data per a pantalles petites */
-    }
-
-    .separator-section {
-        margin: 20px 0;
-    }
-
-    .separator-section .ornamental {
-        height: 30px; /* Ajustar la mida de la línia ornamental */
-    }
 }
 
 /* Peu de pàgina */
@@ -104,11 +89,11 @@
 
 /* Estils de les cards */
 .custom-card {
-    border: 2px solid #208d68;
+    border: 2px solid #1a6e63; /* Borde más oscuro */
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s.ease-in-out;
     margin-bottom: 20px;
 }
 
@@ -152,78 +137,64 @@
     background-color: #1c534f;
 }
 
-/* Ajustos de les cards per a dispositius mòbils */
-@media (max-width: 768px) {
-    .custom-card {
-        margin-bottom: 15px;
-    }
-
-    .custom-card .card-title {
-        font-size: 1.3rem;
-    }
-
-    .custom-card .custom-btn {
-        font-size: 0.9rem; /* Reduir la mida del botó */
-    }
-}
-
 /* Carousel Definitiu */
 .carousel-definitiu {
     box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
     padding: 0;
     background-color: ghostwhite;
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transició suau */
-
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #1a6e63; /* Borde más oscuro */
 }
 
-/* Efecte hover - mou lleugerament el carousel cap amunt i afegeix més ombra */
 .carousel-definitiu:hover {
-    transform: translateY(-5px); /* Mou cap amunt */
-    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4); /* Afegir ombra més pronunciada */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(32, 141, 104, 0.4);
 }
 
-/* Afegeix separació superior i inferior a les imatges del carousel */
 .carousel-definitiu .carousel-item {
-    padding-top: 20px; /* Separació superior */
-    padding-bottom: 20px; /* Separació inferior */
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Ajustar que les imatges ocupen l'espai correctament */
 .carousel-definitiu .carousel-item img {
     object-fit: contain;
     height: 400px;
     width: 100%;
+    border-radius: 10px;
 }
 
-/* Estils de les cites */
-.carousel-definitiu-caption {
+.carousel-caption-box {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #1c534f;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 8px;
-    width: 80%;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    font-size: 1.5vw;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+
+.carousel-caption h5 {
+    color: #1c534f;
+    font-size: 1.8rem;
+    margin: 0;
     font-family: 'Allura', cursive;
     font-weight: bold;
 }
 
-/* Ajustos per a pantalles petites */
 @media (max-width: 576px) {
     .carousel-definitiu .carousel-item img {
         height: 300px;
     }
 
-    .carousel-definitiu-caption {
-        font-size: 3.5vw;
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption-box {
         padding: 5px;
-        width: 90%;
     }
 }
 
