@@ -33,14 +33,22 @@
     }
 }
 
-/* Estil per a la línia de separació amb imatge ornamental */
+/* Contenedor común para todas las secciones para garantizar coherencia */
+.container-common {
+    max-width: 1140px;  /* Asegura que todas las secciones tengan el mismo ancho máximo */
+    margin: 0 auto; /* Centrar todas las secciones horizontalmente */
+    padding: 20px; /* Relleno interno para dar espacio */
+}
+
+/* Sección ornamental - Igual a las cards */
 .separator-section {
-    position: relative;
-    margin: 40px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
+    background-color: white; /* Mismo color de fondo que las cards */
+    /*border: 2px solid #208d68; !* Mismo borde que las cards *!*/
+    border-radius: 10px; /* Bordes redondeados como las cards */
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra igual que las cards */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 2px solid #1a6e63; /* Borde más oscuro */
+    padding: 20px; /* Asegurando el mismo padding que las cards */
+    margin: 40px 0; /* Margen coherente con las otras secciones */
 }
 
 .separator-section:hover {
@@ -57,43 +65,18 @@
 }
 
 .date {
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: #338b85;
     font-family: 'Allura', cursive;
 }
 
-/* Peu de pàgina */
-.footer-custom {
-    background-color: #208d68;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.footer-custom .nav-link {
-    color: white;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.footer-custom .nav-link:hover {
-    color: #d3d3d3;
-}
-
-/* Fonts */
-.allura-font { font-family: 'Allura', cursive; }
-.montserrat-font { font-family: 'Montserrat', sans-serif; }
-
 /* Estils de les cards */
 .custom-card {
-    border: 2px solid #1a6e63; /* Borde más oscuro */
+    border: 2px solid #208d68;
     border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s.ease-in-out;
+    background-color: white; /* Fondo de las cards */
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin-bottom: 20px;
 }
 
@@ -137,14 +120,15 @@
     background-color: #1c534f;
 }
 
-/* Carousel Definitiu */
+/* Carousel Definitiu - Igual que las cards */
 .carousel-definitiu {
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1);
-    padding: 0;
-    background-color: ghostwhite;
-    border-radius: 10px;
+    background-color: white; /* Fondo igual que las cards */
+    /*border: 2px solid #208d68; !* Borde igual que las cards *!*/
+    border-radius: 10px; /* Bordes redondeados como las cards */
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 2px solid #1a6e63; /* Borde más oscuro */
+    padding: 20px; /* Asegurar el mismo padding que las cards */
+    margin: 40px 0; /* Margen coherente con las otras secciones */
 }
 
 .carousel-definitiu:hover {
