@@ -43,7 +43,7 @@
 /* Sección ornamental - Igual a las cards */
 .separator-section {
     background-color: white; /* Mismo color de fondo que las cards */
-    /*border: 2px solid #208d68; !* Mismo borde que las cards *!*/
+    border: 2px solid #208d68; /* Mismo borde que las cards */
     border-radius: 10px; /* Bordes redondeados como las cards */
     box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra igual que las cards */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -120,15 +120,15 @@
     background-color: #1c534f;
 }
 
-/* Carousel Definitiu - Igual que las cards */
+/* Carousel Definitiu - Igual que les cards */
 .carousel-definitiu {
-    background-color: white; /* Fondo igual que las cards */
-    /*border: 2px solid #208d68; !* Borde igual que las cards *!*/
-    border-radius: 10px; /* Bordes redondeados como las cards */
-    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Sombra */
+    background-color: white; /* Fons igual que les cards */
+    border: 2px solid #208d68; /* Vora igual que les cards */
+    border-radius: 10px; /* Vores arrodonides com les cards */
+    box-shadow: 0 4px 8px rgba(32, 141, 104, 0.1); /* Ombra */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    padding: 20px; /* Asegurar el mismo padding que las cards */
-    margin: 40px 0; /* Margen coherente con las otras secciones */
+    padding: 20px; /* Assegura el mateix padding que les cards */
+    margin: 40px 0; /* Màrgen coherent amb les altres seccions */
 }
 
 .carousel-definitiu:hover {
@@ -142,6 +142,7 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Les imatges del carousel també tenen voretes arrodonides */
 .carousel-definitiu .carousel-item img {
     object-fit: contain;
     height: 400px;
@@ -149,25 +150,34 @@
     border-radius: 10px;
 }
 
+/* Estils per a la capsa de la cita amb fons semitransparent */
 .carousel-caption-box {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5); /* Fons negre semitransparent */
     text-align: center;
-    padding: 10px;
+    padding: 20px; /* Padding per crear espai intern */
     box-sizing: border-box;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px; /* Vores arrodonides a la part inferior */
 }
 
+/* Estils per al text de la cita */
 .carousel-caption h5 {
-    color: #1c534f;
-    font-size: 1.8rem;
+    color: #ffffff; /* Text en blanc */
+    font-size: 1.8rem; /* Mida gran */
     margin: 0;
     font-family: 'Allura', cursive;
     font-weight: bold;
 }
 
+.carousel-caption p {
+    color: #ffffff; /* Text blanc */
+    font-size: 1rem; /* Mida del subtítol */
+    margin-top: 10px; /* Separació superior entre el títol i el subtítol */
+}
+
+/* Estils per a pantalles petites */
 @media (max-width: 576px) {
     .carousel-definitiu .carousel-item img {
         height: 300px;
@@ -177,8 +187,12 @@
         font-size: 1.5rem;
     }
 
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
     .carousel-caption-box {
-        padding: 5px;
+        padding: 10px;
     }
 }
 
