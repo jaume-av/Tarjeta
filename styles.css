@@ -150,49 +150,25 @@
     border-radius: 10px;
 }
 
-/* Estils per a la capsa de la cita amb fons semitransparent */
-.carousel-caption-box {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fons negre semitransparent */
-    text-align: center;
-    padding: 20px; /* Padding per crear espai intern */
-    box-sizing: border-box;
-    border-radius: 0 0 10px 10px; /* Vores arrodonides a la part inferior */
+/* Estils per a la capsa del text de la cita */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3); /* Fons negre semitransparent només per al text */
+    padding: 10px 20px; /* Padding per donar espai al voltant del text */
+    border-radius: 10px; /* Vores arrodonides per a la capsa del text */
+    display: inline-block; /* Fa que la capsa s'ajuste al text */
+    max-width: 80%; /* Limita l'amplada màxima de la capsa del text */
+    margin: 0 auto; /* Centra la capsa del text */
 }
 
-/* Estils per al text de la cita */
-.carousel-caption h5 {
-    color: #ffffff; /* Text en blanc */
-    font-size: 1.8rem; /* Mida gran */
-    margin: 0;
-    font-family: 'Allura', cursive;
-    font-weight: bold;
-}
-
-.carousel-caption p {
-    color: #ffffff; /* Text blanc */
-    font-size: 1rem; /* Mida del subtítol */
-    margin-top: 10px; /* Separació superior entre el títol i el subtítol */
-}
-
-/* Estils per a pantalles petites */
+/* Ajustaments per a pantalles petites */
 @media (max-width: 576px) {
     .carousel-definitiu .carousel-item img {
         height: 300px;
     }
 
-    .carousel-caption h5 {
-        font-size: 1.5rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.9rem;
-    }
-
-    .carousel-caption-box {
-        padding: 10px;
+    .carousel-caption {
+        font-size: 0.9rem; /* Redueix la mida del text en pantalles petites */
+        padding: 5px 10px; /* Redueix el padding per a pantalles petites */
     }
 }
 
