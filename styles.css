@@ -202,6 +202,13 @@
     }
 }
 
+
+iframe {
+    border: 0;
+}
+
+
+
 .footer-navbar {
     background-color: #338b85; /* Fondo verde */
     padding: 10px 0; /* Reducir la altura de la barra del footer */
@@ -224,6 +231,8 @@
     margin-top: 5px;
     font-size: 0.8rem; /* Tamaño del texto pequeño */
 }
+
+
 
 
 
