@@ -41,7 +41,7 @@
         font-size: 0.8rem;
     }
 
-    .date {
+    .date, .jaume-isabel {
         font-size: 2.5rem;
     }
 }
@@ -61,6 +61,9 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     padding: 20px;
     margin: 40px 0;
+    /* Ajustar la distancia entre los ornamentos y otros elementos */
+    margin-top: 60px; /* Igualar la distancia con el navbar */
+    margin-bottom: 60px; /* Igualar la distancia con el carousel */
 }
 
 /* Separación mínima en dispositivos pequeños */
@@ -78,7 +81,7 @@
 
 .separator-section .ornamental {
     border: 0;
-    height: 50px;
+    height: 35px;  /* Reducir altura de la imagen ornamental */
     background: url('imatges/detalls/lineaornament.png') no-repeat center center;
     background-size: auto;
     border-radius: 10px;
@@ -87,7 +90,7 @@
 
 /* Estilos para la fecha */
 .date {
-    font-size: 3.5rem;
+    font-size: 2.5rem; /* Misma altura que Jaume & Isabel */
     color: #338b85;
     font-family: 'Allura', cursive;
 }
