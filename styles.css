@@ -201,3 +201,78 @@
         overflow-y: auto;
     }
 }
+
+.footer-navbar {
+    background-color: #338b85; /* Fondo verde */
+    padding: 10px 0; /* Reducir la altura de la barra del footer */
+}
+
+.footer-navbar .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-navbar .nav-link i {
+    color: white; /* Iconos en blanco */
+    font-size: 1.5rem; /* Tamaño del icono */
+}
+
+.footer-navbar .nav-link p {
+    color: white;
+    margin-top: 5px;
+    font-size: 0.8rem; /* Tamaño del texto pequeño */
+}
+
+
+
+
+
+/* Título de la sección de contacto */
+.la-parella-title {
+    font-family: 'Allura', cursive; /* Cambiado a Montserrat */
+    font-size: 3rem; /* Tamaño más grande */
+    font-weight: bold; /* Negrita */
+    color: #338b85;
+    margin-bottom: 20px;
+}
+
+/* Títulos de los nombres */
+.contact-title {
+    font-family: 'Allura', cursive;
+    font-size: 2rem; /* Un poco más pequeño que el título */
+    color: #338b85;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces de contacto */
+.contact-link {
+    color: #6c757d;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #338b85;
+}
+
+/* Botón personalizado */
+.custom-btn {
+    background-color: #338b85 !important; /* Forzar el color verde */
+    border-color: #338b85 !important;
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.custom-btn:hover {
+    background-color: #1c534f !important; /* Forzar el cambio de color al hacer hover */
+}
+
+
+
+
